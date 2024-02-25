@@ -8,7 +8,7 @@ class StorageCli < Formula
   depends_on "go" => :build
 
   def install
-   system "go", "build", "-ldflags", "-X main.Version=#{version}", "-o", "#{bin}/storage", "."
+    system "go", "build", "-ldflags", "-X main.Version=#{version} -s -w", "-o", "#{bin}/storage", "."
   end
 
   test do
