@@ -1,4 +1,4 @@
-class storage < Formula
+class StorageCli < Formula
   desc "A CLI tool that lets you see the storage info of your computer"
   homepage "https://github.com/aln-chg/storage-cli/tree/main"
   url "https://github.com/aln-chg/storage-cli/archive/refs/tags/v1.0.0.tar.gz"
@@ -12,6 +12,6 @@ class storage < Formula
   end
 
   test do
-    system "#{bin}/storage-cli", "--version"
+    system "#{bin}/storage", "--version"
   end
 end
