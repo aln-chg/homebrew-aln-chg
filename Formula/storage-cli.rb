@@ -2,7 +2,7 @@ class StorageCli < Formula
   desc "A CLI tool that lets you see the storage info of your computer"
   homepage "https://github.com/aln-chg/storage-cli/tree/main"
   url "https://github.com/aln-chg/storage-cli/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "d2f726a064600608a8abdd0a5a8f7d1eccd9138d2d2d89e47a6879adb807cbb5"
+  sha256 "cc4e6d16dfc8c0af913ce9618a42807123e547958e92e1a5cdbcce2ffedabc96"
   license "MIT"
 
   depends_on "go" => :build
