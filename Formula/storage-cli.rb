@@ -1,4 +1,4 @@
-class StorageCli < Formula
+class storage < Formula
   desc "A CLI tool that lets you see the storage info of your computer"
   homepage "https://github.com/aln-chg/storage-cli/tree/main"
   url "https://github.com/aln-chg/storage-cli/archive/refs/tags/v1.0.0.tar.gz"
@@ -8,7 +8,7 @@ class StorageCli < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-ldflags", "-s -w", "-o", "#{bin}/storage-cli", "."
+    system "go", "build", "-ldflags", "-s -w", "-o", "#{bin}/storage", "."
   end
 
   test do
